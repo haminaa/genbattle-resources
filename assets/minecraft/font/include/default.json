@@ -55,41 +55,6 @@
 			"ascent": 7,
 			"height": 8,
 			"chars": ["\uE009"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/custom/numerals/1.png",
-			"ascent": 7,
-			"height": 8,
-			"chars": ["\uE010"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/custom/numerals/2.png",
-			"ascent": 7,
-			"height": 8,
-			"chars": ["\uE011"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/custom/numerals/3.png",
-			"ascent": 7,
-			"height": 8,
-			"chars": ["\uE012"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/custom/numerals/4.png",
-			"ascent": 7,
-			"height": 8,
-			"chars": ["\uE013"]
-		},
-		{
-			"type": "bitmap",
-			"file": "minecraft:font/custom/numerals/5.png",
-			"ascent": 7,
-			"height": 8,
-			"chars": ["\uE014"]
 		}
 	
 	]
