@@ -1,0 +1,61 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-orange.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE002"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-cyan.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE003"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-purple.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE004"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-pink.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE005"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-yellow.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE006"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-lime.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE007"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-bw.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE008"]
+		},
+		{
+			"type": "bitmap",
+			"file": "minecraft:font/custom/chat-red.png",
+			"ascent": 7,
+			"height": 8,
+			"chars": ["\uE009"]
+		}
+	
+	]
+}
