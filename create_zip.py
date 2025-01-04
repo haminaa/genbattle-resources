@@ -14,19 +14,21 @@ def zip_directory_except_out(source_dir, out_folder, zip_name):
     
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(source_dir):
-            # Skip the "out" folder
-            if out_folder in root:
+            # Skip the "out" folder and ".git" directory
+            if out_folder in root or '.git' in root:
                 continue
             
             # Add files and subdirectories to the ZIP file
             for file in files:
+                if file == 'create_zip.py':
+                    continue
                 file_path = os.path.join(root, file)
                 # Compute the relative path for the ZIP archive
                 arcname = os.path.relpath(file_path, source_dir)
                 zipf.write(file_path, arcname)
 
-            # Filter out the out folder from dirs to skip walking into it
-            dirs[:] = [d for d in dirs if d != out_folder]
+            # Filter out the out folder and ".git" directory from dirs to skip walking into them
+            dirs[:] = [d for d in dirs if d not in [out_folder, '.git']]
 
 if __name__ == "__main__":
     source_directory = "./"  # Change this to your directory path
