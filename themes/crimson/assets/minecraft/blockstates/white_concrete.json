@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "minecraft:block/white_concrete",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "minecraft:block/white_concrete"
+    },
+    "axis=z": {
+      "model": "minecraft:block/white_concrete",
+      "x": 90
+    }
+  }
+}
