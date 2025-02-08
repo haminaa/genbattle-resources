@@ -12,7 +12,7 @@ def zip_directory_except_out(source_dir, out_folder, zip_name):
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         excluded_files = ['create_zip.py']
         for root, dirs, files in os.walk(source_dir):
-            if out_folder in root or '.git' in root or 'themes' in root:
+            if any(excluded in root for excluded in [out_folder, '.git', 'themes', 'archive']):
                 continue
             
             for file in files:
@@ -22,7 +22,7 @@ def zip_directory_except_out(source_dir, out_folder, zip_name):
                 arcname = os.path.relpath(file_path, source_dir)
                 zipf.write(file_path, arcname)
 
-            excluded_dirs = {out_folder, '.git', 'themes'}
+            excluded_dirs = {out_folder, '.git', 'themes', 'archive'}
             dirs[:] = [d for d in dirs if d not in excluded_dirs]
 
 
